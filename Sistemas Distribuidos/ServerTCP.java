@@ -17,7 +17,7 @@ public class ServerTCP {
             System.out.println("Aguardando novas conexões.");
             Socket s = sst.accept();
             OutputStream os = s.getOutputStream();
-            byte [] mensagem = "Coronga virus".getBytes();
+            byte [] mensagem = "Mensagem teste".getBytes();
             os.write(mensagem);
             os.close();
         } catch (IOException ioex) {
